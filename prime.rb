@@ -3,8 +3,15 @@
 require 'prime'
 
 def prime?(num)
-  
-(2..(num-1 )).to_a.any? { |div| num % div == 0}
-
+  if num <= 1 || num == 0 || num == 1
+    return false
+  elsif
+    (2..num - 1).any? do |i|
+      if num % i == 0
+      return false
+    end
+  end
+end
+true  
 end
 #binding.pry
