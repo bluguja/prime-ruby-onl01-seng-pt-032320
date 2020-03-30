@@ -7,8 +7,8 @@ def prime?(num)
     return false
   elsif
     (2..num - 1).any? { |i|
-      if num % i == 0}
-      return false
+      if num % i == 0
+      return false}
     #end
   end
 end
