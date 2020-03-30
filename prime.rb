@@ -4,7 +4,7 @@ require 'prime'
 
 def prime?(num)
   if num <= 1 || num == 0 || num == 1
-     false
+    return false
   elsif
     (2..num - 1).any? do |i|
       if num % i == 0
